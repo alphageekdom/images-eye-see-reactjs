@@ -1,0 +1,37 @@
+#tos {
+  padding-top: 0;
+}
+
+.tos__container {
+  padding-top: 3rem;
+}
+
+.tos__main-title {
+  text-align: center;
+  margin: 5rem;
+}
+
+.tos__content article {
+  padding-top: 1rem;
+}
+
+.tos__content-info {
+  padding: 1rem;
+}
+
+.tos__content-subtitle {
+  padding-left: 1rem;
+}
+
+.tos__content-list {
+  padding: 1rem;
+}
+
+.tos__content-list li {
+  padding-left: 1rem;
+  padding-top: 5px;
+}
+
+.tos__content a {
+  color: var(--color-blue);
+}

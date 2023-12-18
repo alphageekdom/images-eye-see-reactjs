@@ -1,0 +1,21 @@
+.scrollContainer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 5rem;
+  background: none;
+}
+
+.scrollBtn {
+  background: none;
+  font-size: 3rem;
+  cursor: pointer;
+  color: blue;
+  border: 50%;
+}
+
+.scrollIcon {
+  border-radius: 100%;
+  border: none;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
