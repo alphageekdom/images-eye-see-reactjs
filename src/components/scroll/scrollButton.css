@@ -1,13 +1,15 @@
 .scrollContainer {
+  width: 100vw;
   display: flex;
-  justify-content: end;
+  flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
-  margin-bottom: 5rem;
-  background: none;
+  padding: 3rem 10rem;
+  background: black;
 }
 
 .scrollBtn {
-  background: none;
+  background: transparent;
   font-size: 3rem;
   cursor: pointer;
   color: blue;
@@ -17,5 +19,11 @@
 .scrollIcon {
   border-radius: 100%;
   border: none;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+/* Media Queries Phone */
+@media screen and (max-width: 600px) {
+  .scrollContainer {
+    padding: 1.5rem 5rem;
+  }
 }

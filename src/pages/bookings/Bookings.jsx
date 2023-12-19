@@ -1,23 +1,31 @@
 import Services from '../../sections/services/Services';
-import Hero from '../../components/hero/Hero';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import bookingIMG from '../../assets/hero/bookings.jpg';
 import data from './data';
 import './booking.css';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 const Booking = () => {
   const [bookings] = useState(data);
 
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <section id='bookings'>
-      <Hero
-        url='https://images.unsplash.com/photo-1435527173128-983b87201f4d?q=80&w=3267&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-        alt='Services'
-        title='Services'
+      <img
+        src={bookingIMG}
+        alt='Contact Hero'
+        width={1000}
+        height={500}
+        style={{ objectFit: 'cover' }}
       />
       <div className='booking__hero-title'>
         <h1>Services Available</h1>
       </div>
-      <div className='container bookings__container'>
+      <div className='container bookings__container' data-aos='fade-in'>
         <Services services={bookings} />
       </div>
     </section>

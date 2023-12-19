@@ -1,11 +1,40 @@
-import Hero from '../../components/hero/Hero';
+import contactIMG from '../../assets/hero/contact.jpg';
 import './contact.css';
+import { useState } from 'react';
+import ContactForm from './ContactForm';
+import ContactInfo from './ContactInfo';
 
 const Contact = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(name, email, message);
+  };
   return (
     <section id='contact'>
-      <Hero url='https://images.unsplash.com/photo-1563906267088-b029e7101114?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' />
-      <div className='container contact__container'></div>
+      <img
+        src={contactIMG}
+        alt='Contact Hero'
+        width={1000}
+        height={500}
+        style={{ objectFit: 'cover' }}
+      />
+      <div className='container contact__container'>
+        <div className='contact__hero-title'>
+          <h1>Contact Us</h1>
+        </div>
+        <div className='contact__left'>
+          <div className='contact__left-content'>
+            <ContactInfo />
+          </div>
+        </div>
+        <div className='contact__right-content'>
+          <ContactForm />
+        </div>
+      </div>
     </section>
   );
 };

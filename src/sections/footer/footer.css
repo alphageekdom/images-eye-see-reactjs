@@ -41,9 +41,4 @@
   .footer__copyright small {
     font-size: 0.8rem !important;
   }
-
-  .footerLinks .footerLink:hover {
-    transition: 0.5s;
-    color: blue;
-  }
 }

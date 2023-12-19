@@ -1,6 +1,8 @@
 import './scrollButton.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FaArrowAltCircleUp } from 'react-icons/fa';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 const ScrollButton = () => {
   const [visible, setVisible] = useState(false);
@@ -20,10 +22,19 @@ const ScrollButton = () => {
       behavior: 'smooth',
     });
   };
+
   window.addEventListener('scroll', toggleVisible);
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
-    <div className='container scrollContainer'>
-      <button className='scrollBtn'>
+    <div className='scrollContainer'>
+      <button
+        className='scrollBtn'
+        data-aos='zoom-in-left'
+        aria-label='Scroll Up Button'
+      >
         <FaArrowAltCircleUp
           onClick={scrollToTop}
           style={{ display: visible ? 'inline' : 'none' }}

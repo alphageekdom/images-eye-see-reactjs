@@ -31,14 +31,15 @@ const Service = ({ service }) => {
             <p>{service.desc}</p>
           </div>
           <div className='booking__service-schedule'>
-            <a
+            <button
               href='https://www.example.com'
               target='_blank'
               rel='noreferrer'
               className='btn white'
+              aria-label='Book Service'
             >
               Book
-            </a>
+            </button>
           </div>
         </div>
       </div>

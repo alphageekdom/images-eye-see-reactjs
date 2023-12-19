@@ -53,7 +53,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link to='/tos' className='navLink' onClick={hideNavbar}>
-                TOS
+                Terms of Service
               </Link>
             </li>
             <li>
@@ -62,11 +62,11 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-          <button className='navBtn navCloseBtn'>
+          <button className='navBtn navCloseBtn' aria-label='Close Navbar'>
             <IoCloseSharp onClick={showNavbar} />
           </button>
         </nav>
-        <button className='navBtn'>
+        <button className='navBtn' aria-label='Open Navbar'>
           <IoMenu onClick={showNavbar} />
         </button>
       </div>

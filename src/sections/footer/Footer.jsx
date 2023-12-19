@@ -13,22 +13,42 @@ const Footer = () => {
         </div>
         <div className='footerLinks'>
           <small>
-            <Link className='footerLink' to='/home'>
+            <Link
+              className='footerLink'
+              to='/home'
+              name='Home Page'
+              title='Home Page'
+            >
               Home
             </Link>
           </small>
           <small>
-            <Link className='footerLink' to='/bookings'>
+            <Link
+              className='footerLink'
+              to='/bookings'
+              name='Bookings Page'
+              title='Bookings Page'
+            >
               Bookings
             </Link>
           </small>
           <small>
-            <Link className='footerLink' to='/tos'>
+            <Link
+              className='footerLink'
+              to='/tos'
+              name='Terms of Service Page'
+              title='Terms of Service Page'
+            >
               Terms of Service
             </Link>
           </small>
           <small>
-            <Link className='footerLink' to='/contact'>
+            <Link
+              className='footerLink'
+              to='/contact'
+              name='Contact Page'
+              title='Contact Page'
+            >
               Contact
             </Link>
           </small>

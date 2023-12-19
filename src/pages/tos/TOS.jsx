@@ -1,13 +1,15 @@
-import Hero from '../../components/hero/Hero';
+import tosIMG from '../../assets/hero/tos.jpg';
 import './tos.css';
 
 const TOS = () => {
   return (
     <section id='tos'>
-      <Hero
-        url='https://images.unsplash.com/photo-1484291470158-b8f8d608850d?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-        alt='TOS Hero'
-        title='TOS Hero'
+      <img
+        src={tosIMG}
+        alt='Contact Hero'
+        width={1000}
+        height={500}
+        style={{ objectFit: 'cover' }}
       />
       <div className='container tos__container'>
         <div className='tos__hero-title'>
@@ -308,14 +310,21 @@ const TOS = () => {
               (“Infringement”) of any person or entity. If you are a copyright
               owner, or authorized on behalf of one, and you believe that the
               copyrighted work has been copied in a way that constitutes
-              copyright infringement, please submit your claim via email to
-              patty@imageseyesee.com, with the subject line: “Copyright
-              Infringement” and include in your claim a detailed description of
-              the alleged Infringement as detailed below, under “DMCA Notice and
-              Procedure for Copyright Infringement Claims” You may be held
-              accountable for damages (including costs and attorneys’ fees) for
-              misrepresentation or bad-faith claims on the infringement of any
-              Content found on and/or through Service on your copyright.
+              copyright infringement, please submit your claim via email to{' '}
+              <a
+                href='https://www.imageseyesee.com'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                https://www.imageseyesee.com
+              </a>
+              , with the subject line: “Copyright Infringement” and include in
+              your claim a detailed description of the alleged Infringement as
+              detailed below, under “DMCA Notice and Procedure for Copyright
+              Infringement Claims” You may be held accountable for damages
+              (including costs and attorneys’ fees) for misrepresentation or
+              bad-faith claims on the infringement of any Content found on
+              and/or through Service on your copyright.
             </p>
           </article>
           {/* END ARTICLE 11 */}

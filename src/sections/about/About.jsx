@@ -1,6 +1,9 @@
 import React from 'react';
 import './about.css';
 import { useTypewriter } from 'react-simple-typewriter';
+import { useEffect } from 'react';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 const About = () => {
   const [typeEffect] = useTypewriter({
@@ -9,6 +12,10 @@ const About = () => {
     typeSpeed: 100,
     deleteSpeed: 40,
   });
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <section id='about'>
       <h1 className='about__title'>Welcome to My Home</h1>
@@ -30,7 +37,7 @@ const About = () => {
           </div>
         </div>
         <div className='about__right'>
-          <div className='about__portrait'>
+          <div className='about__portrait' data-aos='fade-up'>
             <img
               src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdvbWFuJTIwcG9ydHJhaXR8ZW58MHx8MHx8fDA%3D'
               alt=''
