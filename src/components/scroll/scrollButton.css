@@ -4,8 +4,7 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  padding: 3rem 10rem;
-  background: black;
+  padding: 3rem 10rem 0 0;
 }
 
 .scrollBtn {

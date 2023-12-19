@@ -72,6 +72,6 @@
   }
 
   .about__portrait {
-    border: none;
+    display: none;
   }
 }

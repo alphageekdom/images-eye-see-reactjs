@@ -53,7 +53,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link to='/tos' className='navLink' onClick={hideNavbar}>
-                Terms of Service
+                Policy
               </Link>
             </li>
             <li>
