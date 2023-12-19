@@ -7,6 +7,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 5rem;
+}
+
+.bookings__container > h2 {
+  color: #454545;
 }
 
 .booking__hero-title {

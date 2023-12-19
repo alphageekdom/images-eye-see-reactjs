@@ -142,10 +142,24 @@
     padding: 0;
     width: 100%;
   }
+}
 
+@media screen and (max-width: 600px) {
   #contactInfo .infoCard {
+    width: 400px;
+  }
+  #contactForm .contactCard {
+    width: 400px;
+  }
+
+  .contact__form {
     width: 500px;
   }
+
+  .contact__form textarea {
+    width: 60%;
+  }
+
   #contactForm {
     padding: 0;
   }

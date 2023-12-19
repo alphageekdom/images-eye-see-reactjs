@@ -26,6 +26,7 @@ const Booking = () => {
         <h1>Services Available</h1>
       </div>
       <div className='container bookings__container' data-aos='fade-in'>
+        <h2>*Hover Over Card*</h2>
         <Services services={bookings} />
       </div>
     </section>
